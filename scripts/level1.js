@@ -82,7 +82,7 @@ function handleGameGrid(){
 }
 //projectiles
 const defender1projectile = new Image();
-defender1projectile.src = 'https://github.com/erunions/DefenseForce/blob/main/defender1projectile.png'
+defender1projectile.src = 'defender1projectile.png'
 
 class Projectile {
     constructor(x, y){
@@ -157,7 +157,7 @@ function handleEnemyProjectiles(){
     }
 }
 const largeOrb = new Image();
-largeOrb.src = 'https://github.com/erunions/DefenseForce/blob/main/largeorb.png'
+largeOrb.src = 'largeorb.png'
 
 class LargeOrb {
     constructor(x, y){
@@ -207,7 +207,7 @@ function handleLargeOrbs(){
     }
 }
 const laser = new Image();
-laser.src = 'https://github.com/erunions/DefenseForce/blob/main/laser.png'
+laser.src = 'laser.png'
 
 class Laser {
     constructor(x, y){
@@ -248,13 +248,13 @@ function handleLasers(){
 }
 //defenders
 const defender1 = new Image();
-defender1.src = 'https://github.com/erunions/DefenseForce/blob/main/defender1.png'
+defender1.src = 'defender1.png'
 const defender2 = new Image();
-defender2.src = 'https://github.com/erunions/DefenseForce/blob/main/defender2.png'
+defender2.src = 'defender2.png'
 const defender3 = new Image();
-defender3.src = 'https://github.com/erunions/DefenseForce/blob/main/defender3.png'
+defender3.src = 'defender3.png'
 const defender4 = new Image();
-defender4.src = 'https://github.com/erunions/DefenseForce/blob/main/defender4.png'
+defender4.src = 'defender4.png'
 
 class Defender {
     constructor(x,y){
@@ -549,13 +549,13 @@ function handleFloatingMessages(){
 //enemies
 const enemyTypes = [];
 const enemy1 = new Image();
-enemy1.src = 'https://github.com/erunions/DefenseForce/blob/main/enemy1.png';
+enemy1.src = 'enemy1.png';
 enemyTypes.push(enemy1);
 const enemy2 = new Image();
-enemy2.src = 'https://github.com/erunions/DefenseForce/blob/main/enemy2.png'
+enemy2.src = 'enemy2.png'
 enemyTypes.push(enemy2);
 const enemy3 = new Image();
-enemy3.src = 'https://github.com/erunions/DefenseForce/blob/main/enemy3.png'
+enemy3.src = 'enemy3.png'
 enemyTypes.push(enemy3);
 
 class Enemy {
@@ -653,7 +653,7 @@ function handleEnemies(){
 
 //resources
 const credits = new Image();
-credits.src = 'https://github.com/erunions/DefenseForce/blob/main/credits.png';
+credits.src = 'credits.png';
 class Resource {
     constructor(){
         this.x = Math.random() * (canvas.width - cellSize);
@@ -682,11 +682,11 @@ function handleResources(){
 }
 //utilities
 const explosion = new Image();
-explosion.src = 'https://github.com/erunions/DefenseForce/blob/main/explosion.png';
+explosion.src = 'explosion.png';
 const smallexplosion = new Image();
-smallexplosion.src = 'https://github.com/erunions/DefenseForce/blob/main/smallexplosion.png';
+smallexplosion.src = 'smallexplosion.png';
 const lightningexplosion = new Image();
-lightningexplosion.src = 'https://github.com/erunions/DefenseForce/blob/main/lightningexplosion.png';
+lightningexplosion.src = 'lightningexplosion.png';
 
 class Explosion {
     constructor(x, y, size) {
@@ -819,7 +819,7 @@ const backgroundMaxFrame = 3;
 
 function drawBackground() {
     const background = new Image();
-    background.src = 'https://github.com/erunions/DefenseForce/blob/main/bg.png';
+    background.src = 'bg.png';
     if (frame % 20 === 0) {
         if(backgroundFrameX < backgroundMaxFrame){
             backgroundFrameX += 1;
@@ -831,7 +831,7 @@ function drawBackground() {
 function animate() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     const menubar = new Image();
-    menubar.src = 'https://github.com/erunions/DefenseForce/blob/main/menubar.png';
+    menubar.src = 'menubar.png';
     ctx.drawImage(menubar, 0, 0, 1440, 160, 0, 0, canvas.width, cellSize);
     drawBackground();
     handleGameGrid();
