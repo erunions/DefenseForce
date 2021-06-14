@@ -1,0 +1,54 @@
+html { 
+    margin:0px; 
+    padding:0px;
+}
+body {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-align: center;
+    font-size: 27px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.information {
+    border: 5px solid rgb(31, 31, 31);
+    margin: 0 auto;
+    width: 50vw;
+    padding: 10px;
+}
+p {
+    line-height: 125%;
+    text-align: center;
+}
+#startileleft {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    height: 1200px;
+    width: 20vw;
+    background: url("../startile.png") repeat 0 0;
+    margin: 0;
+    padding: 0;
+    border: 5px solid rgb(31, 31, 31);
+}
+#startileright {
+    position: absolute;
+    left: 79.5%;
+    top: 0%;
+    bottom: 0%;
+    height: 1200px;
+    width: 20vw;
+    background: url("../startile.png") repeat 0 0;
+    margin: 0;
+    padding: 0;
+    border: 5px solid rgb(31, 31, 31);
+}
